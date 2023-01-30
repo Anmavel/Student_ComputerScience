@@ -15,8 +15,7 @@ public class ComputerScienceStudent extends Student{
     @Override
     public String toString() {
         return "ComputerScienceStudent{" +
-                "goodInMath=" + goodInMath +
-                "Name=" + super.getName() + super.getId() +
-                '}';
+                "Name= " + super.getName() + ", Id="+ super.getId() +
+                ", goodInMath= " + goodInMath +'}';
     }
 }

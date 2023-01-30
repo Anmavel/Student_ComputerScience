@@ -1,3 +1,5 @@
+import ContactsAndFriends.Friend;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -20,6 +22,9 @@ public class Main {
 
          ComputerScienceStudent Guenther = new ComputerScienceStudent("Guenther", 5, true);
          System.out.println(Guenther);
+
+         Friend Pedro= new Friend("Pedro",1);
+         System.out.println(Pedro);
 
 
 
