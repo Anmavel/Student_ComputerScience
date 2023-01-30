@@ -18,6 +18,9 @@ public class Main {
          database.addStudent(valentin);
          System.out.println(database.toString());
 
+         ComputerScienceStudent Guenther = new ComputerScienceStudent("Guenther", 5, true);
+         System.out.println(Guenther);
+
 
 
 
