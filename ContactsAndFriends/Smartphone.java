@@ -9,4 +9,73 @@ public class Smartphone {
 
     List<Contact> contactlist = new ArrayList<>();
 
+    public Smartphone(String modelName, String brand, List<Contact> contactlist) {
+        this.modelName = modelName;
+        this.brand = brand;
+        this.contactlist = contactlist;
+    }
+    public Smartphone() {
+    }
+
+    public boolean startradio(){
+        boolean radioStarted=true;
+        String StrRadioStarted="Radio started";
+        System.out.println(StrRadioStarted);
+        return radioStarted;
+    }
+
+    public boolean stopRadio(){
+        boolean radioStarted=false;
+        String StrRadioStarted="Radio stopped";
+        System.out.println(StrRadioStarted);
+        return radioStarted;
+    }
+
+    public String getPosition(){
+        String position="Köln";
+        return position;
+    }
+
+
+    public String getModelName() {
+        return modelName;
+    }
+
+    public void setModelName(String modelName) {
+        this.modelName = modelName;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public List<Contact> getContactlist() {
+        return contactlist;
+    }
+
+    public void setContactList(List<Contact> contactlist) {
+        this.contactlist = contactlist;
+    }
+
+    @Override
+    public String toString() {
+        return "Smartphone{" +
+                "modelName='" + modelName + '\'' +
+                ", brand='" + brand + '\'' +
+                ", contactList=" + contactlist +
+                '}';
+    }
+
+    public void addContact(Contact nContact){
+        contactlist.add(nContact);
+    }
+    public Contact getContact(int index){
+       return  contactlist.get(index);
+    }
+
 }
+
