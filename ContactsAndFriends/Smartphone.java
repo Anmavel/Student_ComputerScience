@@ -77,5 +77,33 @@ public class Smartphone {
        return  contactlist.get(index);
     }
 
+    public Contact getContactByName(String name){
+
+        for(int i=0;i>=contactlist.size();i++){
+
+            String listContactName = contactlist.get(i).getContactName();
+
+            if(name.equals(listContactName)){
+                return contactlist.get(i);
+            }
+        }
+
+        return null;
+    }
+
+    public void removeContactByName(String name){
+
+        for(int i=0;i>=contactlist.size();i++) {
+
+            String listContactName = contactlist.get(i).getContactName();
+
+            if (name.equals(listContactName)) {
+                contactlist.remove(i);
+            }
+        }
+
+    }
+
+
 }
 
